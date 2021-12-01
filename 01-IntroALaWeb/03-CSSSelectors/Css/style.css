@@ -1,0 +1,12 @@
+body
+{
+    background-color: gray;/*Se coloca la información del background*/
+}
+#p1
+{
+    color: indianred;/*Para colocar el color, es importante colocar el #id pero este id se coloca en el archivo Html*/
+}
+.colorletra
+{
+    color: khaki;
+}
