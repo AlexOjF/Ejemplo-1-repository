@@ -1,0 +1,29 @@
+body
+{
+    margin:0;/*para colocar un margen total de la página*/
+    font-size: 18px;/*Tamaño base de la letra lo recomendado para páginas web. no menor de 16px*/
+    font-family: 'Open Sans', sans-serif;/* Este font family se trajo de la ágina de google*/
+}
+.imagen
+{
+    width: 300px;
+}
+/*Selector avanzado, para quitar el sublineado*/
+nav a 
+{
+    text-decoration: none;
+    color: rgb(100, 27, 27);
+}
+nav a:hover /*Este es para que cambide de color cuando coloque el raton encima. Consejo es agregar todo en orden aflabetico*/
+{
+    color: coral;
+    text-decoration: underline;
+}
+h1 , p , div , nav/*Este es para poder seleccionar dos propiedades y centrarlas*/
+{
+    text-align: center;
+}
+div
+{
+    border: 2px solid gray;/*Para colocar un borde*/
+}
