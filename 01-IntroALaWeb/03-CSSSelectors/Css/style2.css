@@ -27,3 +27,11 @@ div
 {
     border: 2px solid gray;/*Para colocar un borde*/
 }
+ul li{
+    color: blueviolet;
+}
+ul li:nth-child(even)
+{/* es para pode seleccionar una cualidad con respecto a un patrón, que sea par (even) e impar (odd) o si ese tiene poco elementos se puede colocar el núermo que queremos afectar 1,2,3,etc..*/
+    font-style:italic;
+    color: chocolate;
+}
