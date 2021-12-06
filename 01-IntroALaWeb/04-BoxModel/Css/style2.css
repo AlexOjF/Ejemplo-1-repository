@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: palegoldenrod;
+    height: 10vh;
+}
+aside{
+    background-color: palegreen;
+    height: 80vh; /*Cómo en el header y el footer se consumieron 10 por cada elemento quedan restando 80, por eso se coloca esa cantidad*/
+    width: 20%;
+    float: left;/*lo deja flotante o pegado a algún lado, elimina la división que se encuentre dentro de dos etiquetas, cambia la forma de lectura para el navegador*/
+}
+main{
+    background-color: paleturquoise;
+    height: 80vh;
+    width: 80%;
+    float: right ;
+}
+footer{
+    background-color: rgb(231, 104, 163);
+    height: 10vh;/*view heigth, esto esta conforme al 100 del contenedor*/
+    position: fixed; /*Permite realizar una lectura diferente*/
+    bottom: 0px;
+    width: 100%;
+}
