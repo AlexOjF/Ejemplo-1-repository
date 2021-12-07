@@ -13,14 +13,14 @@ aside{
 }
 main{
     background-color: paleturquoise;
+    float: right ;
     height: 80vh;
     width: 80%;
-    float: right ;
 }
 footer{
     background-color: rgb(231, 104, 163);
+    bottom: 0px;
     height: 10vh;/*view heigth, esto esta conforme al 100 del contenedor*/
     position: fixed; /*Permite realizar una lectura diferente*/
-    bottom: 0px;
     width: 100%;
 }

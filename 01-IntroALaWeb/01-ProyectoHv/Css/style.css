@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color:#03bbf2 ;
+    font-family: 'Open Sans', sans-serif;
+}
+.imagen{
+    width: 300px;
+}
+aside{
+    background-color: palegreen;
+    height: 80vh; /*Cómo en el header y el footer se consumieron 10 por cada elemento quedan restando 80, por eso se coloca esa cantidad*/
+    width: 20%;
+    float: left;/*lo deja flotante o pegado a algún lado, elimina la división que se encuentre dentro de dos etiquetas, cambia la forma de lectura para el navegador*/
+}
