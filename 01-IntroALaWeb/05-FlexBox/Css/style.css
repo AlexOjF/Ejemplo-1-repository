@@ -1,0 +1,32 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+}
+header{
+    background-color: #ffe53a;
+    display: flex;/*Para volver resonsive*/
+    justify-content: space-between;/*Para dejar los elementos a los costados*/
+    padding: 0 5px;/*Para modificar el margen interno, el primero no afecta el margen de arriba ni abajo, quiero solo de iz a derecha*/
+}
+h1{
+    margin: 0px;
+    font-size: 1.5rem;/*dos veces o 1.5 acepta decimales. lo que hay en el contenedor padre en este caso seria de header y este a su vez viene de bodý donde hay una unidad*/
+}
+h1, nav{
+    display: inline-block;
+}
+nav{
+    align-items: center; /*Para centrar*/
+    display: flex;
+    justify-content: space-around;/*Para dejar centrado con espacio igual*/
+    width: 20%;
+}
+nav a{
+    font-size: .9rem;
+    text-decoration: none;
+    padding: 15px 15px;/*Es para que el cuadro que cuando se ponga el mouse en ese valor cambie*/
+}
+nav a:hover{
+    background-color: #cd023d;
+}
