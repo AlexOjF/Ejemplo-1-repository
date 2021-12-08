@@ -1,14 +1,96 @@
-body {
-    margin: 0;
-    background-color:#03bbf2 ;
+body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0px;
 }
-.imagen{
-    width: 300px;
+header{
+    background-image:url("../img/Banner.jpg");
+    display: flex;/*Para volver resonsive*/
+    height: 10vh;
+    justify-content: space-between;/*Para dejar los elementos a los costados*/
+    padding: 0 5px;/*Para modificar el margen interno, el primero no afecta el margen de arriba ni abajo, quiero solo de iz a derecha*/
+    color: white;
+}
+h1{
+    margin: 0px;
+    font-size: 1.5rem;/*dos veces o 1.5 acepta decimales. lo que hay en el contenedor padre en este caso seria de header y este a su vez viene de bodý donde hay una unidad*/
+    justify-content: center;
+}
+h1, nav{
+    display: inline-block;
+}
+h2{
+    font-size: 1rem;
+}
+nav{
+    align-items: center; /*Para centrar*/
+    display: flex;
+    justify-content: space-around;/*Para dejar centrado con espacio igual*/
+    width: 20%;
+}
+nav a{
+    font-size: .9rem;
+    text-decoration: none;
+    padding: 15px 15px;/*Es para que el cuadro que cuando se ponga el mouse en ese valor cambie*/
+}
+nav a:hover{
+    background-color: #cd023d;
+}
+main{
+    display: flex;
+    flex-direction: row;/*Si quiero cambiarlo para que salga a la derecha, seria con row-reverse*/
+}
+aside, section{
+    height: 80vh;
 }
 aside{
-    background-color: palegreen;
-    height: 80vh; /*Cómo en el header y el footer se consumieron 10 por cada elemento quedan restando 80, por eso se coloca esa cantidad*/
-    width: 20%;
-    float: left;/*lo deja flotante o pegado a algún lado, elimina la división que se encuentre dentro de dos etiquetas, cambia la forma de lectura para el navegador*/
+    align-items: center;
+    background-color: #797772;
+    flex-direction: column;
+    width: 10%;
+    display:flex;
 }
+aside a{
+    color: black;
+    padding: 5px 0;
+    text-decoration: none;
+    text-align: center;
+}
+aside a:hover{
+    background-color:#cd023d;
+    padding: 0 100%;
+}
+section{
+    display: flex;
+    background-color: #e2e2e2;
+    flex-flow: row wrap;
+    width: 90%;
+}
+article{
+    flex: 1 1 30%;
+    text-align: center;
+}
+img{
+    height: 150px;
+}
+footer{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffff73;
+    height: 10vh;
+    width: 100%;
+}
+p, footer a{
+    color:chocolate;
+    font-size: 1rem;
+}
+p{
+    display: inline;
+    margin: 0;
+}
+.marginizq{
+    margin-left: 5px;
+}
+
