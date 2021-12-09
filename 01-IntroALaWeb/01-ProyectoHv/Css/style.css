@@ -14,7 +14,6 @@ header{
 h1{
     margin: 0px;
     font-size: 1.5rem;/*dos veces o 1.5 acepta decimales. lo que hay en el contenedor padre en este caso seria de header y este a su vez viene de bodý donde hay una unidad*/
-    justify-content: center;
 }
 h1, nav{
     display: inline-block;
