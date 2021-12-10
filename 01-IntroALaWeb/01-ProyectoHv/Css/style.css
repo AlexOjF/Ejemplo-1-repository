@@ -3,11 +3,12 @@ body{
     font-size: 18px;
     margin: 0px;
 }
-header{
-    background-image:url("../img/Banner.jpg");
+.primercuadro{
+    background-image:url("../img/bannelong.jpg");
     display: flex;/*Para volver resonsive*/
-    height: 10vh;
-    justify-content: space-between;/*Para dejar los elementos a los costados*/
+    height: 230px;
+    flex-direction: column;/*Para dejar los elementos a los costados*/
+    align-items: center;
     padding: 0 5px;/*Para modificar el margen interno, el primero no afecta el margen de arriba ni abajo, quiero solo de iz a derecha*/
     color: white;
 }
@@ -39,15 +40,17 @@ main{
     display: flex;
     flex-direction: row;/*Si quiero cambiarlo para que salga a la derecha, seria con row-reverse*/
 }
+/*ASIDE*/
 aside, section{
     height: 80vh;
 }
 aside{
     align-items: center;
     background-color: #797772;
-    flex-direction: column;
-    width: 10%;
     display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10%;
 }
 aside a{
     color: black;
@@ -59,25 +62,30 @@ aside a:hover{
     background-color:#cd023d;
     padding: 0 100%;
 }
+/*SECTION*/
 section{
+    color: black;
     display: flex;
-    background-color: #e2e2e2;
-    flex-flow: row wrap;
+    background-color: #f6ed9e;
+    flex-flow: column wrap;
     width: 90%;
 }
-article{
-    flex: 1 1 30%;
+section article p{
+    color: black;
+}
+section article h3{
     text-align: center;
 }
+
 img{
     height: 150px;
 }
 footer{
     align-items: center;
+    background-color: #ffff73;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #ffff73;
     height: 10vh;
     width: 100%;
 }
@@ -92,4 +100,3 @@ p{
 .marginizq{
     margin-left: 5px;
 }
-
